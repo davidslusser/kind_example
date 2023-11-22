@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: foo-ingress
+  name: demo-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   rules:
   - http:
       paths:
-      - pathType: Prefix
-        path: /
+      - pathType: ImplementationSpecific
+        path: /(/|$)(.*)
         backend:
           service:
-            name: foo-service
+            name: demo-service
             port:
               number: 8080

@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: foo-app-deployment
+  name: demo-deployment
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
-      app: foo
+      app: demo
   template:
     metadata:
       labels:
-        app: foo
+        app: demo
     spec:
       containers:
-      - name: foo-app
-        image: docker.io/library/demo:latest
+      - name: demo-app
+        image: ghcr.io/davidslusser/k8s_pod_info_py:latest
         imagePullPolicy: IfNotPresent
         env:
         - name: POD_IP_ADDRESS
