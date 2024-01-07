@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo-deployment
+  name: py-web
 spec:
   replicas: 4
   selector:
     matchLabels:
-      app: demo
+      app: py-web
   template:
     metadata:
       labels:
-        app: demo
+        app: py-web
     spec:
       containers:
-      - name: demo-app
-        image: ghcr.io/davidslusser/k8s_pod_info_py:latest
+      - name: py-web
+        image: ghcr.io/davidslusser/pod_info_py:latest
         imagePullPolicy: IfNotPresent
         env:
         - name: POD_IP_ADDRESS

@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: py-web
+spec:
+  type: LoadBalancer
+  selector:
+    app: py-web
+  ports:
+  # Default port used by the image
+  - port: 8080
