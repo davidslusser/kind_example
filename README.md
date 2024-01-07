@@ -76,13 +76,6 @@ Example code for getting started with local Kubernetes development using Kind an
 
 <br/>
 
-## Docker images
-- go web app: https://github.com/davidslusser/pod_info_go/pkgs/container/pod_info_go
-- python web app: https://github.com/davidslusser/pod_info_py/pkgs/container/pod_info_py
-
-
-<br/>
-
 ## References
 - https://kind.sigs.k8s.io/
 - https://kubernetes.io/
