@@ -1,5 +1,5 @@
 # kind_example
-Example code for getting started with local Kubernetes development using Kind and simple web applications build with Python and Go.
+Example code for getting started with local Kubernetes development using Kind and simple web applications built with Python and Go.
 
 <br/>
 
